@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Note_App"
         mc:Ignorable="d"
-        Title="Notes" Height="470" Width="290" ResizeMode="NoResize">
+        Title="Notes" Height="500" Width="290" ResizeMode="NoResize">
     <Grid Margin="0,0,0,0">
-        <ListBox x:Name="list_Box" HorizontalAlignment="Center" Height="350" VerticalAlignment="Top" Width="274" d:ItemsSource="{d:SampleData ItemCount=5}" RenderTransformOrigin="0.446,0.492" Margin="0,10,0,0"/>
-        <Button x:Name="ok_Button" Content="OK" HorizontalAlignment="Center" Height="58" Margin="0,368,0,0" VerticalAlignment="Top" Width="94" Click="ok_Button_Click" />
+        <ListBox x:Name="list_Box" HorizontalAlignment="Center" Height="342" VerticalAlignment="Top" Width="274" d:ItemsSource="{d:SampleData ItemCount=5}" RenderTransformOrigin="0.446,0.492" Margin="0,52,0,0"/>
+        <Button x:Name="ok_Button" Content="OK" HorizontalAlignment="Center" Height="58" Margin="0,399,0,0" VerticalAlignment="Top" Width="94" Click="ok_Button_Click" />
+        <TextBox x:Name="box_search" HorizontalAlignment="Center" Height="29" Margin="0,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="274" FontSize="20" TextChanged="box_search_TextChanged"/>
+        <Label Content="Suche:" HorizontalAlignment="Left" Margin="-1,-3,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
